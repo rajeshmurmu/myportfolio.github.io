@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 1);
+    /* color: #4e4e4e; */
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    /* width: 100vw; */
+}
+
+
+/* Navbar */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+nav {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 auto; */
+    padding: 20px;
+
+}
+
+header a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    cursor: pointer;
+}
+
+nav ul li a {
+    font-size: 1.02rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+/* End Navbar */
+
+
+/* Hero Section */
+
+.hero-section {
+    background: url(img/hero-img.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    object-fit: cover;
+    position: relative;
+
+}
+
+
+
+.hero-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 9;
+}
+
+
+.hero-section .hero-content .txt {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    z-index: 11;
+}
+
+/* End Hero Section */
+
+/* Manin section Start */
+
+#main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* About Section Start */
+
+
+/* My Project Section Start */
+.firstSection {
+    width: 100%;
+    /* background-color: rgb(18 18 60); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.firstSection h1 {
+    font-size: 1.9rem;
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px 0;
+
+}
+
+.my-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.my-project .project img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+}
+
+.project{
+    
+}
+.my-project .project img:hover {
+    box-shadow: 0px 0px 10px rgb(157, 154, 154);
+
+}
+
+/* My project Section End */
+
+/* Contact Us Section Start */
+.thirdSection {
+    width: 100%;
+    height: 46.04rem;
+    /* background-color: rgb(18 18 60); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.thirdSection h1 {
+    font-size: 4rem;
+    margin: 30px;
+    text-align: center;
+
+}
+
+/* .thirdSection .contactMe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 30px 0;
+} */
+
+.thirdSection .contactMe .contactWay {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    /* flex-direction: column; */
+    font-size: 2.5rem;
+    /* margin: 20px; */
+}
+
+.thirdSection .contactMe .contactWay div {
+    /* margin: 10px; */
+    font-weight: bold;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+
+.thirdSection .contactMe .contactWay div a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+/* Contact Us Section End */
+
+footer {
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(235, 224, 224);
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    /* position: relative;
+    bottom: 0; */
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
